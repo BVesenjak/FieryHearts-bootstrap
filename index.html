@@ -18,21 +18,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
+
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <style>
-            .carousel-inner {
-              display: flex;
-            }
-        
-            .carousel-item {
-              flex: 0 0 33.33%;
-            }
-        
-            .carousel-inner img {
-              width: 100%;
-              object-fit: cover;
-            }
-          </style>
+        <script src="js/carousel.js" defer></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -106,77 +94,42 @@
         </section>
         <!-- Portfolio-->
         <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/girls/girl1.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/girls/girl1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/girls/girl2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/girls/girl2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/girls/girl3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/girls/girl3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/girls/girl4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/girls/girl4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+           <div class="wrapper">
+                <ul class="carousel">
+                    <li class="card">
+                    <div class="img"><img src="assets/img/girls/girl3.jpg" alt="img" draggable="false"></div>
+                    <h2>1</h2>
+                    <span>Sales Manager</span>
+                    </li>
+                    <li class="card">
+                    <div class="img"><img src="assets/img/girls/girl4.jpg" alt="img" draggable="false"></div>
+                    <h2>2</h2>
+                    <span>Web Developer</span>
+                    </li>
+                    <li class="card">
+                    <div class="img"><img src="assets/img/girls/girl1.jpg" alt="img" draggable="false"></div>
+                    <h2>3</h2>
+                    <span>Online Teacher</span>
+                    </li>
+                    <li class="card">
+                    <div class="img"><img src="assets/img/girls/girl2.jpg" draggable="false"></div>
+                    <h2>4</h2>
+                    <span>Freelancer</span>
+                    </li>
+                    <li class="card">
+                    <div class="img"><img src="assets/img/girls/girl3.jpg" alt="img" draggable="false"></div>
+                    <h2>5</h2>
+                    <span>Bank Manager</span>
+                    </li>
+                    <li class="card">
+                    <div class="img"><img src="assets/img/girls/girl2.jpg" alt="img" draggable="false"></div>
+                    <h2>6</h2>
+                    <span>App Designer</span>
+                    </li>
+                </ul>
+           </div>
         </div>
-<hr>
-<hr>
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="w-32 h-32" src="assets/img/girls/girl1.jpg" alt="Image 1">
-      </div>
-      <div class="carousel-item">
-        <img class="w-32 h-32" src="assets/img/girls/girl2.jpg" alt="Image 2">
-      </div>
-      <div class="carousel-item">
-        <img class="w-32 h-32" src="assets/img/girls/girl3.jpg" alt="Image 3">
-      </div>
-      <div class="carousel-item">
-        <img class="w-32 h-32" src="assets/img/girls/girl4.jpg" alt="Image 4">
-      </div>
-      <!-- Add more carousel items as needed -->
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        
         <!-- Call to action-->
         <section class="page-section bg-dark text-white">
             <div class="container px-4 px-lg-5 text-center">
@@ -184,6 +137,14 @@
                 <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
             </div>
         </section>
+
+
+
+
+
+
+
+
 
         <!-- Footer-->
         <footer class="bg-light py-5">
